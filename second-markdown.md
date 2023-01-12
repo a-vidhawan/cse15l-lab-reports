@@ -12,11 +12,11 @@ This is the second 'Markdown' file
 
 ---
 
-'This is how code is displayed'
+`This is how code is displayed`
 
-'''
+```
 This is 
 how a 
 code block
 would look
-'''
+```
