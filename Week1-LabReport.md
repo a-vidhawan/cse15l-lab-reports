@@ -65,4 +65,28 @@ Many course in CSE use course-specific accounts. These are similar to corporate 
 ***
 ## Part-3 Running Some Commands
 
+It's now time to try Running some commands on your **computer**, **and** on the **remote computer.**
 
+Here are some Useful Commands to try:
+
+- `cd ~`
+- `cd`
+- `ls -lat`
+- `ls - a`
+- `ls <directory>` where directory is `/home/linux/ieng6/cs15lwi23/cs15lwi23abc` where `abc` is your specific account letters
+- `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`
+- `pwd`
+
+On Personal Computer:
+
+![image](https://user-images.githubusercontent.com/122562955/212558169-8a2dfc05-8348-4758-9390-9cec6d3ab4e4.png)
+
+On the server:
+
+![image](https://user-images.githubusercontent.com/122562955/212558012-80678983-4fc2-47eb-9b4b-07a61de7337c.png)
+
+To exit the remote computer, you canuse the command `exit` or press `Ctrl` + `D`
+
+![image](https://user-images.githubusercontent.com/122562955/212558058-c8126c30-62c6-4249-82cc-60bf1a591e22.png)
+
+***
