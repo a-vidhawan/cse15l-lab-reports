@@ -48,5 +48,17 @@ class StringHandler implements URLHandler {
 
 ![WhatsApp Image 2023-01-30 at 19 15 09](https://user-images.githubusercontent.com/122562955/215654081-247632da-02a2-4519-bc61-2200b7847fb2.jpg)
 
-**Example 1:**
+**Example 1:** Path: `/add-message?s=Aarav Vidhawan`
 
+The aforementioned path is typed after `localhost:4000` and results in the following web page:
+
+![image](https://user-images.githubusercontent.com/122562955/215654582-2c609f15-2963-48d2-88cf-f928d7daf48f.png)
+
+**Methods Called:**
+
+- When starting the server, the `main` method in `StringServer` is called and the port number is passed in as a command line argument.
+- The main method calls `Server.start(port, new StringHandler())`, this command starts the server and creates a new `StringHandler`.
+- In the `Server.start` method, a `HttpServer` is created using Java provided constructor.
+- A new `ServerHttpHandler` is created using the `handler` as a template.
+- The `handle` method in `ServerHttpHandler` is called.
+- In the `handle` method, the`handleRequest` method from StringHandler is called, with the extracted URI as an argument.
