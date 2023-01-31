@@ -208,6 +208,10 @@ Terminal Output upon running JUnit again after altering the code to tackle the b
 ***
 ## Part-3
 
+Labs in Week 2 and 3 have been about topics of great relevance in the world outside our textbooks and grades, and i'm glad that i got the opportunity to learn about them.
 
+Lab in Week 2 was all about Web Servers. We used websites all day, every day of our lives, in lab we got to see a simpler version of how those websites work. What was really interesting was that when we ran the WebServer classes on the remote computer we were connected to, we got an actual url that could be typed into a browser and be accessed from multiple computers. This gave me insight into how actual websites must function and helped me understand aspects of the process I didn't even know about before lab.
+
+Week 3 was all about testing programs. Testing code thoroughly is almost as important as writing good code in the professional world, you are expected to have have tested your code for as many different kinds of inputs that you can think of. Lab 3 taught us the basics of testing our code, designing tester methods and reading terminal outputs for symptoms. Lab 3 will also help me CSE 12, another class I am taking this quarter that emphasises code testing.
 
 ***
