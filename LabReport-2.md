@@ -44,4 +44,9 @@ class StringHandler implements URLHandler {
     }
 }
 ```
+**Starting the Server**
+
+![WhatsApp Image 2023-01-30 at 19 15 09](https://user-images.githubusercontent.com/122562955/215654081-247632da-02a2-4519-bc61-2200b7847fb2.jpg)
+
+**Example 1:**
 
