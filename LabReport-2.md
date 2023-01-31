@@ -10,7 +10,6 @@ Below is the Code for my `StringServer` class and `StringHandler` class. These c
 import java.io.IOException;
 import java.net.URI;
 
-
 class StringServer {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
@@ -26,7 +25,7 @@ class StringServer {
 
 class StringHandler implements URLHandler {
     String contents = "";
-
+    int count=0;
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
             return contents;
@@ -35,7 +34,15 @@ class StringHandler implements URLHandler {
             if (url.getPath().contains("/add-message")) {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
-                    contents+="\n"+parameters[1];
+                    if (count!=0)
+                    {
+                        contents+="\n"+parameters[1];
+                    }
+                    else
+                    {
+                        contents+=parameters[1];
+                        count++;
+                    }
                     return contents;
                 }
             }
@@ -85,5 +92,19 @@ The aforementioned path is typed after `localhost:4000` and results in the follo
 - Since it does, an array `parameters` is created with `paramaters[0]="s"` and `parameters[1]="University of California San Diego"`.
 - Since `count!=0`, a new line - `"\n"` - is added to `comtents` and then "University of California San Diego" is added to it.
 - `contents` is returned and displayed on the web page.
+
+***
+## Part-2: Program Testing
+
+Part 2 of the lab report involves choosing 1 bug from lab 3, and providing tester methods, symptoms, the bug and the fixed code for it.
+
+I've chosen the bug in the `filter` method of the `ListExamples` class.
+
+
+
+***
+##Part-3
+
+
 
 ***
