@@ -76,6 +76,8 @@ The aforementioned path is typed after `localhost:4000` and results in the follo
 - Since this is the first String being added to `contents`, "Aarav Vidhawan" is added to `contents` and `count` is incremented by 1.
 - `contents` is returned and displayed on the web page.
 
+***
+
 **Example 2:** Path: `/add-message?s=University of California San Diego`
 
 The aforementioned path is typed after `localhost:4000` and results in the following web page:
