@@ -3,7 +3,7 @@
 # Researching Commands
 ***
 
-## Command 1: `grep -r`
+## Command Option 1: `grep -r`
 
 The `grep -r` command option of grep recursively searches the directory and subsdirectories (if any) of the provided source, for a specified String.
 
@@ -50,3 +50,71 @@ the Caribbean.
 ```
 
 Here, the `grep` command searches through the directories and subdirectories of `wriiten_2`, searching for the String "Lucayans". It returns the name of the file that "Lucayans" is in and also the lines.
+
+***
+## Command Option 2: `grep -c`
+
+The `grep -c` command option of grep shows the number of lines that contain a specified word in a file. Here, it is used in combination with `grep -r` to help us search through a number of directories faster. It prints out the name of every file it looked in, followed by the number of lines that contained the required String.
+
+**Example 1:**
+
+Terminal Symptom:
+
+```
+```
+
+
+
+**Example 2:**
+
+Terminal Symptom:
+
+```
+```
+
+
+***
+## Command Option 3: `grep -`
+
+The `grep -` command option of grep 
+
+**Example 1:**
+
+Terminal Symptom:
+
+```
+```
+
+
+
+**Example 2:**
+
+Terminal Symptom:
+
+```
+```
+
+
+***
+## Command Option 4: `grep -`
+
+The `grep -` command option of grep 
+
+**Example 1:**
+
+Terminal Symptom:
+
+```
+```
+
+
+
+**Example 2:**
+
+Terminal Symptom:
+
+```
+```
+
+
+***
