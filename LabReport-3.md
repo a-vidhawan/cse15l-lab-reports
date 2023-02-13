@@ -7,7 +7,7 @@
 
 The `grep -r` command option of grep recursively searches the directory and subsdirectories (if any) of the provided source, for a specified String.
 
-**Example 1:** `grep -r "" written_2`
+**Example 1:** `grep -r "inheritance" written_2`
 
 Terminal Symptom:
 
@@ -56,7 +56,7 @@ Here, the `grep` command searches through the directories and subdirectories of 
 
 The `grep -c` command option of grep shows the number of lines that contain a specified word in a file. Here, it is used in combination with `grep -r` to help us search through a number of directories faster. It prints out the name of every file it looked in, followed by the number of lines that contained the required String.
 
-**Example 1:**
+**Example 1:** `grep -c "" written_2`
 
 Terminal Symptom:
 
@@ -65,7 +65,7 @@ Terminal Symptom:
 
 
 
-**Example 2:**
+**Example 2:** `grep -c "" written_2`
 
 Terminal Symptom:
 
@@ -78,7 +78,7 @@ Terminal Symptom:
 
 The `grep -` command option of grep 
 
-**Example 1:**
+**Example 1:** `grep - "" written_2`
 
 Terminal Symptom:
 
@@ -87,7 +87,7 @@ Terminal Symptom:
 
 
 
-**Example 2:**
+**Example 2:** `grep - "" written_2`
 
 Terminal Symptom:
 
@@ -100,7 +100,7 @@ Terminal Symptom:
 
 The `grep -` command option of grep 
 
-**Example 1:**
+**Example 1:** `grep - "" written_2`
 
 Terminal Symptom:
 
@@ -109,7 +109,7 @@ Terminal Symptom:
 
 
 
-**Example 2:**
+**Example 2:** `grep - "" written_2`
 
 Terminal Symptom:
 
