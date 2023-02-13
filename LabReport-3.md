@@ -14,9 +14,14 @@ Terminal Symptom:
 ```
 $ grep -r "inheritance" written_2
 
-written_2/travel_guides/berlitz1/WhereToHongKong.txt:        many churches all speak of the Portuguese inheritance as well as the
+written_2/travel_guides/berlitz1/WhereToHongKong.txt:many churches all speak of the Portuguese inheritance as well as the
 
-written_2/travel_guides/berlitz2/Crete-WhereToGo.txt:The main site (the one with the admission fee) covers only a tiny part of the whole, but it protects one of the most important archaeological finds on the island — the Code of Laws dating from the Dorian period, around 500 b.c. The huge stone tablet was incised with script dictating codes governing daily life including rules on marriage, property, and inheritance rights. The remains of a small theater lie just in front of the code area, and the site entrance is dominated by the apse of the 6th century basilica of Ágios Títos (St. Titus). The remains of the saint were originally interred here but were moved to Iráklion following Arab raids which destroyed the rest of the building in 825.
+written_2/travel_guides/berlitz2/Crete-WhereToGo.txt:The main site (the one with the admission fee) covers only a tiny part of the
+whole, but it protects one of the most important archaeological finds on the island — the Code of Laws dating from the Dorian 
+period, around 500 b.c. The huge stone tablet was incised with script dictating codes governing daily life including rules on 
+marriage, property, and inheritance rights. The remains of a small theater lie just in front of the code area, and the site entrance 
+is dominated by the apse of the 6th century basilica of Ágios Títos (St. Titus). The remains of the saint were originally interred
+here but were moved to Iráklion following Arab raids which destroyed the rest of the building in 825.
 ```
 Here, the `grep` command searches the directories and subdirectories of `written_2`, looking for the String "inheritance" in a file. It returns the names of the files it finds "inheritance" in and returns the lines as well.
 
