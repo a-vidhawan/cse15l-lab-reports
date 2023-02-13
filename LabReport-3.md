@@ -23,7 +23,7 @@ rules on marriage, property, and inheritance rights. The remains of a small thea
 site entrance is dominated by the apse of the 6th century basilica of Ágios Títos (St. Titus). The remains of the saint were 
 originally interredhere but were moved to Iráklion following Arab raids which destroyed the rest of the building in 825.
 ```
-Here, the `grep` command searches the directories and subdirectories of `written_2`, looking for the String "inheritance" in a file. It returns the names of the files it finds "inheritance" in and returns the lines as well.
+Here, the `grep -r` command searches the directories and subdirectories of `written_2`, looking for the String "inheritance" in a file. It returns the names of the files it finds "inheritance" in and returns the lines as well.
 
 **Example 2:** `grep -r "Lucayans" written_2`
 
@@ -49,29 +49,80 @@ Bahamas to work — and die — in Spanish gold mines and on farms and pearl fis
 the Caribbean.
 ```
 
-Here, the `grep` command searches through the directories and subdirectories of `wriiten_2`, searching for the String "Lucayans". It returns the name of the file that "Lucayans" is in and also the lines.
+Here, the `grep -r` command searches through the directories and subdirectories of `wriiten_2`, searching for the String "Lucayans". It returns the name of the file that "Lucayans" is in and also the lines.
 
 ***
 ## Command Option 2: `grep -c`
 
-The `grep -c` command option of grep shows the number of lines that contain a specified word in a file. Here, it is used in combination with `grep -r` to help us search through a number of directories faster. It prints out the name of every file it looked in, followed by the number of lines that contained the required String.
+The `grep -c` command option of grep shows the number of lines that contain a specified word in a file. Here, it is used in combination with ` -r` to allow us to search through the files in `written_2`. It prints out the name of every file it looked in, followed by the number of lines that contained the required String.
 
-**Example 1:** `grep -c "" written_2`
-
-Terminal Symptom:
-
-```
-```
-
-
-
-**Example 2:** `grep -c "" written_2`
+**Example 1:** `grep -c -r "Lucayans" written_2`
 
 Terminal Symptom:
 
 ```
+$ grep -c -r "Lucayans" written_2
+
+written_2/non-fiction/OUP/Abernathy/ch1.txt:0
+written_2/non-fiction/OUP/Abernathy/ch14.txt:0
+written_2/non-fiction/OUP/Abernathy/ch15.txt:0
+written_2/non-fiction/OUP/Abernathy/ch2.txt:0
+written_2/non-fiction/OUP/Abernathy/ch3.txt:0
+written_2/non-fiction/OUP/Abernathy/ch6.txt:0
+....
+written_2/travel_guides/berlitz2/Athens-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Athens-WhereToGo.txt:0
+written_2/travel_guides/berlitz2/Bahamas-History.txt:2
+written_2/travel_guides/berlitz2/Bahamas-Intro.txt:0
+written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt:0
+....
+written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt:0
+written_2/travel_guides/berlitz2/Vallarta-History.txt:0
+written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
+```
+*Output shortened for Lab Report*
+
+Here, the `grep -c -c` command recursively goes through all the files in the directories and subdirectories of `written_2`, printing out the file name and number of lines that contain "Lucayans". As you can see, it prints 0 for almost all files except for one in the middle that has the number '2' next to it, since that is the only file that contains "Lucayans" and has it twice.
+
+**Example 2:** `grep -c -r "Italy" written_2`
+
+Terminal Symptom:
+
+```
+$ grep -c -r "Italy" written_2
+
+written_2/non-fiction/OUP/Abernathy/ch1.txt:0
+written_2/non-fiction/OUP/Abernathy/ch14.txt:0
+written_2/non-fiction/OUP/Abernathy/ch15.txt:0
+....
+written_2/non-fiction/OUP/Fletcher/ch2.txt:2
+written_2/non-fiction/OUP/Fletcher/ch5.txt:0
+written_2/non-fiction/OUP/Fletcher/ch6.txt:0
+written_2/non-fiction/OUP/Fletcher/ch9.txt:1
+written_2/non-fiction/OUP/Kauffman/ch1.txt:0
+....
+
+written_2/non-fiction/OUP/Rybczynski/ch2.txt:2
+....
+written_2/travel_guides/berlitz1/HistoryFrance.txt:3
+written_2/travel_guides/berlitz1/HistoryFWI.txt:0
+written_2/travel_guides/berlitz1/HistoryGreek.txt:1
+written_2/travel_guides/berlitz1/HistoryHawaii.txt:0
+written_2/travel_guides/berlitz1/HistoryHongKong.txt:0
+written_2/travel_guides/berlitz1/HistoryIbiza.txt:0
+written_2/travel_guides/berlitz1/HistoryIndia.txt:0
+written_2/travel_guides/berlitz1/HistoryIsrael.txt:0
+written_2/travel_guides/berlitz1/HistoryIstanbul.txt:2
+written_2/travel_guides/berlitz1/HistoryItaly.txt:44
+....
+written_2/travel_guides/berlitz2/Vallarta-History.txt:0
+written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
 ```
 
+Here, the `grep -c -r` command recursively searches through all files in the directories and subdirectories of `written_2` for "Italy". As you can see in the shortened output, it prints out the names of all files it checked, and prints number of lines that had "Italy" next to it. In some instances a file has 1 or 2 lines containing "Italy". there is even a file that has 44 lines containing "Italy".
 
 ***
 ## Command Option 3: `grep -`
@@ -83,17 +134,20 @@ The `grep -` command option of grep
 Terminal Symptom:
 
 ```
+
 ```
 
-
+Here, 
 
 **Example 2:** `grep - "" written_2`
 
 Terminal Symptom:
 
 ```
+
 ```
 
+Here, 
 
 ***
 ## Command Option 4: `grep -`
@@ -105,16 +159,19 @@ The `grep -` command option of grep
 Terminal Symptom:
 
 ```
+
 ```
 
-
+Here, 
 
 **Example 2:** `grep - "" written_2`
 
 Terminal Symptom:
 
 ```
+
 ```
 
+Here, 
 
 ***
