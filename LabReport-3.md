@@ -7,6 +7,8 @@
 
 The `grep -r` command option of grep recursively searches the directory and subdirectories (if any) of the provided source, for a specified String. It then prints out the path to the file and the line in the file containing the specified String.
 
+Source: ChatGPT prompt for `grep` command-line options
+
 **Example 1:** `grep -r "inheritance" written_2`
 
 Terminal Symptom:
@@ -55,6 +57,8 @@ Here, the `grep -r` command searches through the directories and subdirectories 
 ## Command Option 2: `grep -c`
 
 The `grep -c` command option of grep shows the number of lines that contain a specified word in a file. Here, it is used in combination with ` -r` to allow us to search through the files in `written_2`. It prints out the name of every file it looked in, followed by the number of lines that contained the required String.
+
+Source: ChatGPT prompt for `grep` command-line options
 
 **Example 1:** `grep -c -r "Lucayans" written_2`
 
@@ -129,6 +133,8 @@ Here, the `grep -c -r` command recursively searches through all files in the dir
 
 The `grep -l` command option of grep 'lists' the files that are found to contain the specified String. The output in the terminal consists of only the paths to the files that contain the specified String, and not the actual lines that contain them. Here, it is used in combination with ` -r` to allow us to search through the files in `written_2`.
 
+Source: ChatGPT prompt for `grep` command-line options
+
 **Example 1:** `grep -l -r "Lucayans" written_2`
 
 Terminal Symptom:
@@ -176,6 +182,8 @@ Here, the `grep -l -r` command recursively goes through all files in the directo
 ## Command Option 4: `grep -n`
 
 The `grep -n` command option of grep prefixes each line of output with the line number in the file. Here, it is used in collaboration with `-r` allowing us to easily access all the file sin `written_2`. 
+
+Source: ChatGPT prompt for `grep` command-line options
 
 **Example 1:** `grep -n -r "Lucayans" written_2`
 
