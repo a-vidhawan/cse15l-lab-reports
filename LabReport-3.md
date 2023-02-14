@@ -103,7 +103,6 @@ written_2/non-fiction/OUP/Fletcher/ch6.txt:0
 written_2/non-fiction/OUP/Fletcher/ch9.txt:1
 written_2/non-fiction/OUP/Kauffman/ch1.txt:0
 ....
-
 written_2/non-fiction/OUP/Rybczynski/ch2.txt:2
 ....
 written_2/travel_guides/berlitz1/HistoryFrance.txt:3
