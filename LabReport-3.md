@@ -121,31 +121,55 @@ written_2/travel_guides/berlitz2/Vallarta-History.txt:0
 written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:0
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
 ```
+*Shortened Output for Lab Report*
 
 Here, the `grep -c -r` command recursively searches through all files in the directories and subdirectories of `written_2` for "Italy". As you can see in the shortened output, it prints out the names of all files it checked, and prints number of lines that had "Italy" next to it. In some instances a file has 1 or 2 lines containing "Italy". there is even a file that has 44 lines containing "Italy".
 
 ***
-## Command Option 3: `grep -`
+## Command Option 3: `grep -l`
 
-The `grep -` command option of grep 
+The `grep -l` command option of grep 'lists' the files that are found to contain the specified String. The output in the terminal consists of only the paths to the files that contain the specified String, and not the actual lines that contain them. Here, it is used in combination with ` -r` to allow us to search through the files in `written_2`.
 
-**Example 1:** `grep - "" written_2`
+**Example 1:** `grep -l -r "Lucayans" written_2`
 
 Terminal Symptom:
 
 ```
+$ grep -l -r "Lucayans" written_2
 
+written_2/travel_guides/berlitz2/Bahamas-History.txt
 ```
 
 Here, 
 
-**Example 2:** `grep - "" written_2`
+**Example 2:** `grep -l -r "Italy" written_2`
 
 Terminal Symptom:
 
 ```
+$ grep -l -r "Italy" written_2
 
+written_2/non-fiction/OUP/Castro/chP.txt
+written_2/non-fiction/OUP/Fletcher/ch2.txt
+written_2/non-fiction/OUP/Fletcher/ch9.txt
+written_2/non-fiction/OUP/Rybczynski/ch2.txt
+written_2/travel_guides/berlitz1/HistoryFrance.txt
+written_2/travel_guides/berlitz1/HistoryGreek.txt
+written_2/travel_guides/berlitz1/HistoryIstanbul.txt
+written_2/travel_guides/berlitz1/HistoryItaly.txt
+....
+written_2/travel_guides/berlitz2/California-WhereToGo.txt
+written_2/travel_guides/berlitz2/Canada-History.txt
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
+written_2/travel_guides/berlitz2/Costa-History.txt
+written_2/travel_guides/berlitz2/CostaBlanca-History.txt
+written_2/travel_guides/berlitz2/Crete-WhereToGo.txt
+written_2/travel_guides/berlitz2/CstaBlanca-WhereToGo.txt
+written_2/travel_guides/berlitz2/Paris-WhereToGo.txt
+written_2/travel_guides/berlitz2/Portugal-History.txt
+written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt
 ```
+*Shortened output for Lab Report*
 
 Here, 
 
@@ -175,5 +199,3 @@ Terminal Symptom:
 Here, 
 
 ***
-
-Some Markdown text with <span style="color:blue">some *blue* text</span>.
