@@ -139,7 +139,7 @@ $ grep -l -r "Lucayans" written_2
 written_2/travel_guides/berlitz2/Bahamas-History.txt
 ```
 
-Here, 
+Here, the `grep -l -r` command recursively goes through all files in the directories and subdirectories of `written_2` for "Lucayans". It prints out the name, path of the 1 file that contains "Lucayans". 
 
 **Example 2:** `grep -l -r "Italy" written_2`
 
@@ -170,7 +170,7 @@ written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt
 ```
 *Shortened output for Lab Report*
 
-Here, 
+Here, the `grep -l -r` command recursively goes through all files in the directories and subdirectories of `written_2` for "Italy". It prints out the names, paths of all the files that it sees contain "Italy".
 
 ***
 ## Command Option 4: `grep -`
