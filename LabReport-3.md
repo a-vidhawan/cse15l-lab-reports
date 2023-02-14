@@ -229,9 +229,11 @@ written_2/travel_guides/berlitz1/WhatToIstanbul.txt:352: The most well known is 
 written_2/travel_guides/berlitz1/WhatToIstanbul.txt:361: zerde (a saffron-flavoured rice pudding), and tavuk gö‘sü (a
 written_2/travel_guides/berlitz1/WhereToIstanbul.txt:570: lemon- and cherry-flavoured drinks.
 written_2/travel_guides/berlitz1/WhereToIstanbul.txt:1222: international in flavour than Turkish.
+
 written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt:81:The favourite dish of many visitors is the Andalusian “liquid salad,”
 gazpacho. This chilled, highly-flavoured soup, with chopped tomatoes, peppers, cucumbers, onions, and croutons, is a rousing 
 refresher on a hot summer day. Caution: gazpachos with an s is quite a different dish (see page 90).
+
 written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt:111:Although wines from the north are considered to be Spain’s best, the
 Costa Blanca’s vino is very drinkable and very reasonably priced. Look for Monóvar, Pinosa, and the lighter, less plentiful Ricote 
 (all available in red, rosé, or white). Beware of the innocent-looking red Jumilla. Its 18 percent alcohol content can sneak up on 
@@ -239,6 +241,7 @@ you. Same peril with the strong Alicante dessert wine, ten drops of which were l
 Although the prescribed amount failed to restore France’s ageing Louis XIV to health, it might work wonders with a morning-after 
 feeling. Be sure to taste the Costa Blanca’s famous Moscatel wine. It’s perfect with dessert and preserves all the sweet, 
 distinctive flavour of a Muscat grape.
+
 written_2/travel_guides/berlitz2/CstaBlanca-WhereToGo.txt:71:From Guadalest, the road leads to the small town of Callosa de 
 Ensarriá, centre of the honey industry, where you can taste before you buy, often six or eight different flavours. From Callosa 
 take the Parcent road, follow it for 21⁄2 km (11⁄2 miles), and make a right-hand turn at the entrance to the El Algar waterfalls,
