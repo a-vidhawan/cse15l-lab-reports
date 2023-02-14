@@ -84,7 +84,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
 ```
 *Output shortened for Lab Report*
 
-Here, the `grep -c -c` command recursively goes through all the files in the directories and subdirectories of `written_2`, printing out the file name and number of lines that contain "Lucayans". As you can see, it prints 0 for almost all files except for one in the middle that has the number '2' next to it, since that is the only file that contains "Lucayans" and has it twice.
+Here, the `grep -c -r` command recursively goes through all the files in the directories and subdirectories of `written_2`, printing out the file name and number of lines that contain "Lucayans". As you can see, it prints 0 for almost all files except for one in the middle that has the number '2' next to it, since that is the only file that contains "Lucayans" and has it twice.
 
 **Example 2:** `grep -c -r "Italy" written_2`
 
@@ -173,21 +173,37 @@ written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt
 Here, the `grep -l -r` command recursively goes through all files in the directories and subdirectories of `written_2` for "Italy". It prints out the names, paths of all the files that it sees contain "Italy".
 
 ***
-## Command Option 4: `grep -`
+## Command Option 4: `grep -v`
 
-The `grep -` command option of grep 
+The `grep -v` command option of grep reverses what grep does usually. So, instead of returning the lines or files that conatain a specified String, it returns those that do not. Here, it is used in combination with `-r` and `l` to allow us to search through all files conveniently and shorten the output.
 
-**Example 1:** `grep - "" written_2`
+**Example 1:** `grep -v -r -l "Lucayans" written_2`
 
 Terminal Symptom:
 
 ```
+$ grep -v -r -l "Lucayans" written_2
 
+written_2/non-fiction/OUP/Abernathy/ch1.txt
+written_2/non-fiction/OUP/Abernathy/ch14.txt
+written_2/non-fiction/OUP/Abernathy/ch15.txt
+written_2/non-fiction/OUP/Abernathy/ch2.txt
+written_2/non-fiction/OUP/Abernathy/ch3.txt
+written_2/non-fiction/OUP/Abernathy/ch6.txt
+written_2/non-fiction/OUP/Abernathy/ch7.txt
+.....
+written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
+written_2/travel_guides/berlitz2/PuertoRico-History.txt
+written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt
+written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
+written_2/travel_guides/berlitz2/Vallarta-History.txt
+written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 ```
 
-Here, 
+Here, the `grep -v -r -l` command recursively goes through all files in the directories and subdirectories of `writen_2` for "Lucayans". It prints out the paths and names of the files that **do not** contain "Lucayans". So, all the paths seen in the output above are paths for files that do not have "Lucayans" in them.
 
-**Example 2:** `grep - "" written_2`
+**Example 2:** `grep -v -r -l "" written_2`
 
 Terminal Symptom:
 
