@@ -5,7 +5,7 @@
 
 ## Command Option 1: `grep -r`
 
-The `grep -r` command option of grep recursively searches the directory and subsdirectories (if any) of the provided source, for a specified String.
+The `grep -r` command option of grep recursively searches the directory and subdirectories (if any) of the provided source, for a specified String.
 
 **Example 1:** `grep -r "inheritance" written_2`
 
@@ -173,44 +173,43 @@ written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt
 Here, the `grep -l -r` command recursively goes through all files in the directories and subdirectories of `written_2` for "Italy". It prints out the names, paths of all the files that it sees contain "Italy".
 
 ***
-## Command Option 4: `grep -v`
+## Command Option 4: `grep -n`
 
-The `grep -v` command option of grep reverses what grep does usually. So, instead of returning the lines or files that conatain a specified String, it returns those that do not. Here, it is used in combination with `-r` and `l` to allow us to search through all files conveniently and shorten the output.
+The `grep -n` command option of grep prefixes each line of output with the line number in the file. Here, it is used in collaboration with `-r` allowing us to easily access all the file sin `written_2`. 
 
-**Example 1:** `grep -v -r -l "Lucayans" written_2`
-
-Terminal Symptom:
-
-```
-$ grep -v -r -l "Lucayans" written_2
-
-written_2/non-fiction/OUP/Abernathy/ch1.txt
-written_2/non-fiction/OUP/Abernathy/ch14.txt
-written_2/non-fiction/OUP/Abernathy/ch15.txt
-written_2/non-fiction/OUP/Abernathy/ch2.txt
-written_2/non-fiction/OUP/Abernathy/ch3.txt
-written_2/non-fiction/OUP/Abernathy/ch6.txt
-written_2/non-fiction/OUP/Abernathy/ch7.txt
-.....
-written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
-written_2/travel_guides/berlitz2/PuertoRico-History.txt
-written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt
-written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
-written_2/travel_guides/berlitz2/Vallarta-History.txt
-written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
-written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
-```
-
-Here, the `grep -v -r -l` command recursively goes through all files in the directories and subdirectories of `writen_2` for "Lucayans". It prints out the paths and names of the files that **do not** contain "Lucayans". So, all the paths seen in the output above are paths for files that do not have "Lucayans" in them.
-
-**Example 2:** `grep -v -r -l "" written_2`
+**Example 1:** `grep -n -r "Lucayans" written_2`
 
 Terminal Symptom:
 
 ```
+$ grep -n -r "Lucayans" written_2
+
+written_2/travel_guides/berlitz2/Bahamas-History.txt:6:Centuries before the arrival of Columbus, a peaceful Amerindian people who
+called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the
+Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of
+these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 
+October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today 
+as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and 
+other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
+
+written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothered to settle in the Bahamas, but the number of 
+shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, 
+Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which
+was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of
+South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to
+work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
+```
+
+Here, the `grep -n -r` command recursively goes through all files in the directories and subdirectories of `writen_2` for "Lucayans". It prints out the paths and names of the files that contain "Lucayans", and the line number in the file where Lucayans is present.
+
+**Example 2:** `grep -n -r "Exquisite" written_2`
+
+Terminal Symptom:
 
 ```
 
-Here, 
+```
+
+Here, the `grep -n -r` command recursively goes through all files in the directories and subdirectories of `writen_2` for "". It prints out the paths and names of the files that contain "", and the line number in the file where Lucayans is present.
 
 ***
