@@ -5,7 +5,7 @@
 
 ## Command Option 1: `grep -r`
 
-The `grep -r` command option of grep recursively searches the directory and subdirectories (if any) of the provided source, for a specified String.
+The `grep -r` command option of grep recursively searches the directory and subdirectories (if any) of the provided source, for a specified String. It then prints out the path to the file and the line in the file containing the specified String.
 
 **Example 1:** `grep -r "inheritance" written_2`
 
