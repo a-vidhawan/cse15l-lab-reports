@@ -18,7 +18,7 @@ First, I got the command terminal open on my computer, and a browser as well. Th
 
 The command `ssh` is used to log into a remote server.
 
-**Step 5)** I typed in the command `$ git clone git@github.com:ucsd-cse15l-w23/lab7.git` and pressed <Enter>.
+**Step 5)** I typed in the command `$ git clone git@github.com:ucsd-cse15l-w23/lab7.git` and pressed < Enter >.
 
 ![image](https://user-images.githubusercontent.com/122562955/221543038-dcf2ebd2-8cfb-4eeb-a88d-d9ef1bac89c9.png)
 
@@ -30,32 +30,32 @@ The `git clone` command downloads all the files from the repositry into the curr
 
 The `cd` command changes thge working directory, and `ls` lists all files and sub directories.
 
-**Step 7)** I pressed `Ctrl + R` and typed in 'javac' to look for the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command in my history and pressed <Enter>.
-            Then pressed `Ctrl + R` and typed 'java -' to look for the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` command in my history and pressed <Enter>.
+**Step 7)** I pressed `Ctrl + R` and typed in 'javac' to look for the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command in my history and pressed < Enter >.
+            Then pressed `Ctrl + R` and typed 'java -' to look for the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` command in my history and pressed < Enter >.
 
 ![image](https://user-images.githubusercontent.com/122562955/221535487-dbd2e936-ca95-40ef-ab1c-1ac68c216b0a.png)
 
-The `Ctrl + R` shortcut is used to search through your history, the `javac` command is to compile all files in the working directory, and the `java` command is to rubn the test class.
+The `Ctrl + R` shortcut is used to search through your history, the `javac` command is to compile all files in the working directory, and the `java` command is to run the test class.
 
-**Step 8)** I typed in `nano Li` and pressed <Tab> to autocomplete it to `nano ListExamples` and the i typed '.j' and press <Tab> to autocomplete again to `$ nano ListEamples.java`.
+**Step 8)** I typed in `nano Li` and pressed <Tab> to autocomplete it to `nano ListExamples` and the I typed '.j' and press <Tab> to autocomplete again to `$ nano ListEamples.java`.
            
 ![image](https://user-images.githubusercontent.com/122562955/221538817-1ba64189-74c5-43ec-8058-4cd3cd4ee845.png)
             
-I then pressed <Enter> which got me to this screen.
+I then pressed < Enter > which got me to this screen.
 
 ![image](https://user-images.githubusercontent.com/122562955/221536662-1ef8c51e-2c6c-4a46-9257-dc232c26930f.png)
             
 `nano` is the command which opens the specifies file in the 'nano' text editor so that it can be edited.
  
-**Step 9)** I then pressed <down> 14 times and then <right> 22 times. then I pressed <backspace> 3 times. This fixed one of the bugs.
+**Step 9)** I then pressed <down> 14 times and then < right > 22 times. then I pressed < backspace > 3 times. This fixed one of the bugs.
             
 ![image](https://user-images.githubusercontent.com/122562955/221537979-a584895c-e824-4662-8893-be3a799fab66.png)
             
-**Step 10)** I then pressed <down> 28 times and then pressed <left> 5 times and <backspace> once. Then I typed in '2'. This fixed the second bug.
+**Step 10)** I then pressed < down > 28 times and then pressed < left > 5 times and < backspace > once. Then I typed in '2'. This fixed the second bug.
             
 ![image](https://user-images.githubusercontent.com/122562955/221540486-cc74ac99-8f27-41bb-9376-c4e4d7aa3415.png)
 
- **Step 11)** I now pressed `Ctrl + O` and pressed <Enter> to save it in the same file name.
+ **Step 11)** I now pressed `Ctrl + O` and pressed < Enter > to save it in the same file name.
       
  ![image](https://user-images.githubusercontent.com/122562955/221538366-7175bb1b-2ebc-4389-a761-8bb405a57f85.png)
 
@@ -63,8 +63,8 @@ I then pressed <Enter> which got me to this screen.
             
   ![image](https://user-images.githubusercontent.com/122562955/221538965-26193d2f-c22b-4cf9-b93b-72ebca5038d2.png)
 
-  **Step 13)** I then pressed <up> 4 times to get back the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command from my history and press <Enter> to compile all files again.
-            Then I pressed <up> 4 times again to get the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` command from my history and pressed <Enter> to run the tests again.
+  **Step 13)** I then pressed <up> 4 times to get back the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command from my history and press < Enter > to compile all files again.
+            Then I pressed <up> 4 times again to get the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` command from my history and pressed < Enter > to run the tests again.
             
 ![image](https://user-images.githubusercontent.com/122562955/221540596-9e90efe8-81ec-494b-a910-345817ba7e26.png)
 
