@@ -10,7 +10,7 @@ First, I got the command terminal open on my computer, and a browser as well. Th
 
 **Step 3)** The timer now **starts**!
 
-**Step 4)** I typed in the command `$ ssh cs15lwi23___@ieng6.ucsd.edu` where the blank space is for every student's unique three letter account number. Then I pressed <Enter>.
+**Step 4)** I typed in the command `$ ssh cs15lwi23___@ieng6.ucsd.edu` where the blank space is for every student's unique three letter account number. Then I pressed < Enter > .
 
 ![image](https://user-images.githubusercontent.com/122562955/221531985-6bf070c7-b0b7-462d-aef4-a4724f80a287.png)
 
