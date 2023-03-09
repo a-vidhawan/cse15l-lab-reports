@@ -63,8 +63,8 @@ I then pressed `<Enter>` which got me to this screen.
             
   ![image](https://user-images.githubusercontent.com/122562955/221538965-26193d2f-c22b-4cf9-b93b-72ebca5038d2.png)
 
-  **Step 13)** I then pressed `<up>` 4 times to get back the ` javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java ` command from my history and press `<Enter>` to compile all files again.
-            Then I pressed `<up>` 4 times again to get the ` java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests ` command from my history and pressed `<Enter>` to run the tests again.
+  **Step 13)** I then pressed `<up>` 4 times to get back the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`  command from my history and press `<Enter>` to compile all files again.
+            Then I pressed `<up>` 4 times again to get the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` command from my history and pressed `<Enter>` to run the tests again.
             
 ![image](https://user-images.githubusercontent.com/122562955/221540596-9e90efe8-81ec-494b-a910-345817ba7e26.png)
 
