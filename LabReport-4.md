@@ -30,14 +30,14 @@ The `git clone` command downloads all the files from the repository into the cur
 
 The `cd` command changes thge working directory, and `ls` lists all files and sub directories.
 
-**Step 7)** I pressed `<Ctrl + R>` and typed in 'javac' to look for the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command in my history and pressed `<Enter>`.
-            Then pressed `<Ctrl + R>` and typed 'java -' to look for the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` command in my history and pressed `<Enter>`.
+**Step 7)** I pressed `<Ctrl + R>` and typed in `<javac>` to look for the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command in my history and pressed `<Enter>`.
+            Then pressed `<Ctrl + R>` and typed `<java ->` to look for the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` command in my history and pressed `<Enter>`.
 
 ![image](https://user-images.githubusercontent.com/122562955/221535487-dbd2e936-ca95-40ef-ab1c-1ac68c216b0a.png)
 
 The `<Ctrl + R>` shortcut is used to search through your history, the `javac` command is to compile all files in the working directory, and the `java` command is to run the test class.
 
-**Step 8)** I typed in `nano Li` and pressed `<Tab>` to autocomplete it to `nano ListExamples` and the I typed '.j' and press `<Tab>` to autocomplete again to `$ nano ListEamples.java`.
+**Step 8)** I typed in `nano Li` and pressed `<Tab>` to autocomplete it to `nano ListExamples` and the I typed `<.j>` and press `<Tab>` to autocomplete again to `$ nano ListEamples.java`.
            
 ![image](https://user-images.githubusercontent.com/122562955/221538817-1ba64189-74c5-43ec-8058-4cd3cd4ee845.png)
             
@@ -51,7 +51,7 @@ I then pressed `<Enter>` which got me to this screen.
             
 ![image](https://user-images.githubusercontent.com/122562955/221537979-a584895c-e824-4662-8893-be3a799fab66.png)
             
-**Step 10)** I then pressed `<down>` 28 times and then pressed `<left>` 5 times and `<backspace>` once. Then I typed in '2'. This fixed the second bug.
+**Step 10)** I then pressed `<down>` 28 times and then pressed `<left>` 5 times and `<backspace>` once. Then I typed in `<2>`. This fixed the second bug.
             
 ![image](https://user-images.githubusercontent.com/122562955/221540486-cc74ac99-8f27-41bb-9376-c4e4d7aa3415.png)
 
