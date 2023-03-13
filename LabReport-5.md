@@ -148,26 +148,43 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 Here, the `find -type f` command goes through the directories and subdirectories in `written_2/travel_guides` and prints the paths of all the regular files that it finds, it excludes printing the paths of the directories and subdirectories of `written_2/travel_guides`.
 
 ***
-## Command Option 4: `find -`
+## Command Option 4: `find -iname`
 
-The `find -` command option of find 
+The `find -iname` command option of find allows the user to search for files and directories by their, while being case-insensitive. The `i` in `-iname` stands for "ignore case".
 
 Source: ChatGPT prompt for `find` command-line options.
 
-**Example 1:** ` `
+**Example 1:** `find written_2 -iname "bAhaMAS-HistoRY.txt"`
 
 Terminal Symptom:
 
 ```
+$ find written_2 -name "bAhaMAS-HistoRY.txt"
+
+$ find written_2 -iname "bAhaMAS-HistoRY.txt"
+written_2/travel_guides/berlitz2/Bahamas-History.txt
 ```
 
 Here, 
 
-**Example 2:** ` `
+**Example 2:** `find written_2 -iname "*haWAIi.txt"`
 
 Terminal Symptom:
 
 ```
+$ find written_2 -iname "*haWAIi.txt"
+
+written_2/travel_guides/berlitz1/HandRHawaii.txt
+written_2/travel_guides/berlitz1/HistoryHawaii.txt
+written_2/travel_guides/berlitz1/WhatToHawaii.txt
+written_2/travel_guides/berlitz1/WhereToHawaii.txt
+
+$ find written_2 -name "*Hawaii.txt"
+
+written_2/travel_guides/berlitz1/HandRHawaii.txt
+written_2/travel_guides/berlitz1/HistoryHawaii.txt
+written_2/travel_guides/berlitz1/WhatToHawaii.txt
+written_2/travel_guides/berlitz1/WhereToHawaii.txt
 ```
 
 Here, 
