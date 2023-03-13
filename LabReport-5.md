@@ -11,7 +11,7 @@ Source: ChatGPT prompt for `find` command-line options.
 
 **Example 1:** ` `
 
-Terminal Output:
+Terminal Symptom:
 
 ```
 ```
@@ -20,7 +20,7 @@ Here,
 
 **Example 2:** ` `
 
-Terminal Output:
+Terminal Symptom:
 
 ```
 ```
@@ -75,7 +75,7 @@ Source: ChatGPT prompt for `find` command-line options.
 
 **Example 1:** `find written_2 -type d`
 
-Terminal Output:
+Terminal Symptom:
 
 ```
 $ find written_2 -type d
@@ -98,7 +98,7 @@ Here, the `find -type d` command goes through `written_2` recursively and prints
 
 **Example 2:** `find written_2/travel_guides -type f`
 
-Terminal Ouptut:
+Terminal Symptom:
 
 ```
 $ find written_2/travel_guides -type f
@@ -133,7 +133,7 @@ Source: ChatGPT prompt for `find` command-line options.
 
 **Example 1:** ` `
 
-Terminal Output:
+Terminal Symptom:
 
 ```
 ```
@@ -142,7 +142,7 @@ Here,
 
 **Example 2:** ` `
 
-Terminal Output:
+Terminal Symptom:
 
 ```
 ```
