@@ -31,7 +31,7 @@ written_2/travel_guides/berlitz1/WhatToHawaii.txt
 written_2/travel_guides/berlitz1/WhereToHawaii.txt
 ```
 
-Here, the `find -size` command searches for files in `written_2` that are less than or equal to 5 Kilobytes in size. An additional filter is applied to the command using `-name "*.txt", which tells the find command to only look for files ending in ".txt". All the paths printed out are paths to files that are at the most 5 Kilobytes in size.
+Here, the `find -size` command searches for files in `written_2` that are less than or equal to 5 Kilobytes in size. An additional filter is applied to the command using `-name "*.txt"`, which tells the find command to only look for files ending in ".txt". All the paths printed out are paths to files that are at the most 5 Kilobytes in size.
 
 **Example 2:** `find written_2 -size +175k`
 
