@@ -165,7 +165,7 @@ $ find written_2 -iname "bAhaMAS-HistoRY.txt"
 written_2/travel_guides/berlitz2/Bahamas-History.txt
 ```
 
-Here, 
+Here, The `find` command is being used to look for the "Bahamas-History.txt" file. We can see above that when we look for it using the `-name` command and some weird capitalization, it does not give us any symptoms as it is unable to find that exact file. But, when we look for it using the `-iname` command it prints the path to the "Bahamas-History.txt" file.
 
 **Example 2:** `find written_2 -iname "*haWAIi.txt"`
 
@@ -187,6 +187,6 @@ written_2/travel_guides/berlitz1/WhatToHawaii.txt
 written_2/travel_guides/berlitz1/WhereToHawaii.txt
 ```
 
-Here, 
+Here, the find command is being used to look for files ending in "Hawaii.txt" that are present in `written_2`. We can see above that when we look for those files using the `-iname` command and some weird capitalization and then when we use the `-name` command with "Hawaii.txt" we get the same output both times, which means the `-iname` is printing the correct paths.
 
 ***
