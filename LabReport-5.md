@@ -3,29 +3,52 @@
 # Researching Commands
 ***
 
-## Command Option 1: `find -`
+## Command Option 1: `find -size`
 
-The `find -` command option of find 
+The `find -size` command option of find looks for files that a match a specific size limit, in the target directory. adding the `+1M` or `+150k` modifier allows the command to search for files that are greater that or equals to the value after the `+` in size. It also works with the `-` modifier which makes it such that it searches for files that are less than or equal to the parameter in size.
 
 Source: ChatGPT prompt for `find` command-line options.
 
-**Example 1:** ` `
+**Example 1:** `find written_2 -size -5k -name "*.txt"`
 
 Terminal Symptom:
 
 ```
+$ find written_2 -size -5k -name "*.txt"
+
+written_2/travel_guides/berlitz1/HandRHongKong.txt
+written_2/travel_guides/berlitz1/HandRIbiza.txt
+written_2/travel_guides/berlitz1/HandRIstanbul.txt
+written_2/travel_guides/berlitz1/HandRJerusalem.txt
+written_2/travel_guides/berlitz1/HandRLakeDistrict.txt
+written_2/travel_guides/berlitz1/HandRLasVegas.txt
+written_2/travel_guides/berlitz1/HandRLisbon.txt
+written_2/travel_guides/berlitz1/HandRLosAngeles.txt
+written_2/travel_guides/berlitz1/HandRMadeira.txt
+written_2/travel_guides/berlitz1/HandRMallorca.txt
+written_2/travel_guides/berlitz1/WhatToFrance.txt
+written_2/travel_guides/berlitz1/WhatToHawaii.txt
+written_2/travel_guides/berlitz1/WhereToHawaii.txt
 ```
 
-Here, 
+Here, the `find -size` command searches for files in `written_2` that are less than or equal to 5 Kilobytes in size. An additional filter is applied to the command using `-name "*.txt", which tells the find command to only look for files ending in ".txt". All the paths printed out are paths to files that are at the most 5 Kilobytes in size.
 
-**Example 2:** ` `
+**Example 2:** `find written_2 -size +175k`
 
 Terminal Symptom:
 
 ```
+$ find written_2 -size +175k
+
+written_2/travel_guides/berlitz1/WhereToFrance.txt
+written_2/travel_guides/berlitz1/WhereToItaly.txt
+written_2/travel_guides/berlitz1/WhereToJapan.txt
+written_2/travel_guides/berlitz1/WhereToMalaysia.txt
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
+written_2/travel_guides/berlitz2/China-WhereToGo.txt
 ```
 
-Here, 
+Here, the `find -size` command searches the subdirectories and directories of `written_2` for files that are greater than or equal to 175 Kilobytes in size. All the paths printed out are paths to files that are at least 175 Kilobytes in size.
 
 ***
 ## Command Option 2: `find -name`
