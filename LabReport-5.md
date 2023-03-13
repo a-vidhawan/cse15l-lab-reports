@@ -5,6 +5,28 @@
 
 ## Command Option 1: `find -`
 
+The `find -` command option of find 
+
+Source: ChatGPT prompt for `find` command-line options.
+
+**Example 1:** ` `
+
+Terminal Output:
+
+```
+```
+
+Here, 
+
+**Example 2:** ` `
+
+Terminal Output:
+
+```
+```
+
+Here, 
+
 ***
 ## Command Option 2: `find -name`
 
@@ -101,5 +123,30 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 *Shortened Ouput for Lab Report*
 
 Here, the `find -type f` command goes through the directories and subdirectories in `written_2/travel_guides` and prints the paths of all the regular files that it finds, it excludes printing the paths of the directories and subdirectories of `written_2/travel_guides`.
+
+***
+## Command Option 4: `find -`
+
+The `find -` command option of find 
+
+Source: ChatGPT prompt for `find` command-line options.
+
+**Example 1:** ` `
+
+Terminal Output:
+
+```
+```
+
+Here, 
+
+**Example 2:** ` `
+
+Terminal Output:
+
+```
+```
+
+Here, 
 
 ***
